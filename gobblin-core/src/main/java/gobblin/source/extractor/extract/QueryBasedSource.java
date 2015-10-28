@@ -106,7 +106,7 @@ public abstract class QueryBasedSource<S, D> extends AbstractSource<S, D> {
    */
   private long getLatestWatermarkFromMetadata(SourceState state) {
     LOG.debug("Get latest watermark from the previous run");
-    long latestWaterMark = ConfigurationKeys.DEFAULT_WATERMARK_VALUE;
+    long latestWaterMark = 20151026103512;
 
     List<WorkUnitState> previousWorkUnitStates = Lists.newArrayList(state.getPreviousWorkUnitStates());
     List<Long> previousWorkUnitStateHighWatermarks = Lists.newArrayList();
